@@ -4,6 +4,22 @@
   Agenda (7 sessions * 4 hours each)
   -----------------------------------
    1. Spark - Basics & Architecture
+   Spark Basics:
+
+Apache Spark is a distributed computing framework used for large-scale data processing.
+Spark is designed to process data in memory and can be up to 100x faster than Hadoop MapReduce for certain workloads.
+Spark provides APIs for various programming languages, including Scala, Java, Python, and R.
+Spark has several components, including Spark Core, Spark SQL, Spark Streaming, MLlib, and GraphX, which provide support for various data processing tasks.
+
+Spark Architecture:
+Spark architecture is based on a master-slave architecture, where the master node is called the Spark Driver and the slave nodes are called the Spark Executors.
+The Spark Driver program creates and manages the Spark Context, which is the entry point for Spark applications and coordinates the distribution of tasks across the cluster.
+The Spark Executors are responsible for executing tasks and storing data in memory or on disk.
+Spark provides a distributed storage system called RDD (Resilient Distributed Dataset) that is partitioned across the cluster and can be processed in parallel across multiple nodes.
+Spark uses a DAG (Directed Acyclic Graph) execution engine to execute tasks in parallel and optimize the execution plan based on the dependencies between tasks.
+Spark can run on various cluster managers, such as Apache Mesos, Hadoop YARN, and Kubernetes, and can also be run in standalone mode.
+Overall, Spark's architecture is designed to provide efficient and scalable data processing using a distributed computing model that processes data in memory and enables parallel execution of tasks across a cluster of machines.
+
    2. Spark Core API
 	-> RDD Transformations & Actions
 	-> Shaed Variables
